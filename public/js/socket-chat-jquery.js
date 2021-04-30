@@ -82,7 +82,7 @@ function insertarNombre(data) {
     var html = '';
 
     html += '<div class="p-20 b-b">'
-    html += '<h3 class="box-title">Sala de chat - <b>' + data + '</b></h3>'
+    html += '<h3 class="box-title">Usuario: <b>' + data + '</b></h3>'
     html += '</div>'
 
     nameChat.html(html);
