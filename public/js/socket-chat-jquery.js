@@ -10,6 +10,7 @@ var formEnviar = $('#formEnviar');
 var txtMensaje = $('#txtMensaje');
 var divChatbox = $('#divChatbox');
 var nameChat = $('#nameChat');
+var footer = $('#footer');
 
 //Funciones para renderizar usuarios
 
@@ -89,6 +90,18 @@ function insertarNombre(data) {
 }
 
 window.onload = insertarNombre(nombre);
+
+
+function insertarFooter() {
+
+    var html = '';
+    html += "<b>Andres' Chat - " + new Date().getFullYear() + "</b>";
+    footer.html(html);
+
+}
+
+window.onload = insertarFooter();
+
 
 function scrollBottom() {
 
