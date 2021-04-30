@@ -27,7 +27,6 @@ socket.on('connect', function() {
 
 // escuchar
 socket.on('disconnect', function() {
-
     console.log('Perdimos conexión con el servidor');
 
 });
@@ -51,7 +50,7 @@ socket.on('mensajePrivado', function(mensaje) {
 
 });
 
-socket.emmit('error', function(data) {
+socket.emit('error', function(data) {
 
     if (data === true) {
         alert('Error, por favor vuelva a ingresar');
