@@ -47,6 +47,7 @@ io.on('connection', (client) => {
 
     });
 
+    
     //La persona se desconecta o recarga la página
 
     client.on('disconnect', () => {
